@@ -2347,7 +2347,7 @@ section {
 
 
     .violet{
-      background-color: #FF0000;
+      background-color: #e03a3c;
       height: 80px;
   }
 
@@ -2395,7 +2395,7 @@ section {
     }
     .change .bar-2 {opacity: 0;}
   .yellow{
-      background-color: #FF0000 ;
+      background-color: #e03a3c ;
       height: 80px;
       color: #fff ;
   }
@@ -2415,7 +2415,7 @@ section {
       z-index: 1;
   }
   .strike {
-      text-decoration-color: #FF0000 !important;
+      text-decoration-color: #e03a3c !important;
       text-decoration-thickness: 2px !important;
       text-decoration: line-through;
   }
@@ -2426,7 +2426,7 @@ section {
     }
   } 
   .socialmedia{
-    background-color: #FF0000;
+    background-color: #e03a3c;
     z-index: 999;
   }
   .purchase-info{
@@ -2453,7 +2453,7 @@ section {
     background: #256EFF;
   }
   .purchase-info .btn:last-of-type{
-    background: #F64749;
+    background: #e03a3c;
   }
   .purchase-info .btn:hover{
     opacity: 0.9;
