@@ -487,6 +487,7 @@ section {
 .section-bg {
   padding: 120px 0;
   color: #fff;
+  margin-top: -243px;
 }
 
 .section-bg:before {
@@ -651,6 +652,7 @@ section {
 @media (max-width: 768px) {
   .about {
     text-align: center;
+    margin-top: -182px;
   }
 }
 
@@ -2232,7 +2234,7 @@ section {
 }
 .panels{
   background:#fffffff6;
-  box-shadow: 0 2rem 2rem #00000080;
+  box-shadow: 0 0rem 0.5rem #000;
   min-height:200px;
   width:100%;
   max-width:90%;
@@ -2279,6 +2281,7 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 .crakersimg{
   width: 200px;
@@ -2297,6 +2300,7 @@ section {
   .crakers{
     display: flex;
     flex-wrap: wrap;
+    border-bottom: dashed 1px #6c757d;
   }
 }
 .list{
@@ -2524,7 +2528,7 @@ section {
   display: flex;
   justify-content: end;
   margin-top: -24px;
-    margin-left: 5px;
+    margin-left: -13px;
 }
 .addbtn button {
   border-radius: 7px;
@@ -2550,5 +2554,8 @@ font-weight: 700;
 #imageGallery{
   border: solid 1px #6c757d;
     border-radius: 14px;
-    height: 200px;
+    height: 164px;
+}
+.carousel{
+  z-index: 2;
 }
