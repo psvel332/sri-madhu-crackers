@@ -141,7 +141,7 @@ h6 {
 
 @media (max-width: 992px) {
   .get-started-btn {
-    margin: 3px 5px 0 0;
+    margin: 3px 5px 0 5px;
     padding: 6px 8px;
   }
 }
@@ -2340,7 +2340,7 @@ section {
     }
   @media screen and (max-width: 500px){
       .fss-5{
-          font-size: 17px !important;
+          font-size: 14px !important;
       }
     }
   @media screen and (max-width: 500px){
@@ -2522,13 +2522,13 @@ section {
   }
 }
 .addbtn{
-  width: 180px;
-  height: 40px;
+  width: 94px;
+  height: 30px;
   position: relative;
   display: flex;
   justify-content: end;
   margin-top: -24px;
-    margin-left: -13px;
+    margin-left: 13px;
 }
 .addbtn button {
   border-radius: 7px;
@@ -2550,11 +2550,12 @@ font-weight: 700;
 }
 .cards{
   border-bottom: dashed 1px #6c757d;
+  margin-top: 2px;
 }
 #imageGallery{
   border: solid 1px #6c757d;
     border-radius: 14px;
-    height: 164px;
+    height: 89px;
 }
 .carousel{
   z-index: 2;
