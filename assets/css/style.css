@@ -2511,6 +2511,7 @@ section {
     display: inline-block;
     /* display: flex; */
       cursor: pointer;
+      margin-top: -22px;
   }
 }
 .logo1{
