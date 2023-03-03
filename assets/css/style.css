@@ -2390,7 +2390,7 @@ section {
   .Order {
       position: fixed;
       width: 100%;
-      top: 102px;
+      top: 100px;
       background-color:#281a3bcf;
       font-size: 18px;
       height: 30px;
@@ -2560,4 +2560,72 @@ font-weight: 700;
 }
 .carousel{
   z-index: 2;
+}
+.site-icon{
+  display: flex;
+}
+.marquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: #fefefe;
+  color: #e03a3c;
+  /* border: 1px solid #4a4a4a; */
+}
+
+.marquee p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 2s linear infinite;
+  -webkit-animation: scroll-left 1s linear infinite;
+  animation: scroll-left 20s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+      -webkit-transform: translateX(100%);
+  }
+  100% {
+      -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+}
+.section1 {
+  padding: 24px 0;
+  overflow: hidden;
+  position: relative;
+}
+body div .totalvaluenav{
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
 }

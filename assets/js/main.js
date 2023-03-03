@@ -312,12 +312,66 @@
 //     });
 // })
 
+$('.hidebtn').click(function () {
+ $('.total-card').hide();
+ });
+ $(".openbtn").click(function(){
+  $(".total-card").show();
+});
+$('.hidebtn1').click(function () {
+  $('.total-card1').hide();
+ 
+  });
+  $(".openbtn1").click(function(){
+   $(".total-card1").show();
+   
+ });
+ $('.hidebtn2').click(function () {
+  $('.total-card2').hide();
+ 
+  });
+  $(".openbtn2").click(function(){
+   $(".total-card2").show();
+   
+ });
+ $('.hidebtn3').click(function () {
+  $('.total-card3').hide();
+ 
+  });
+  $(".openbtn3").click(function(){
+   $(".total-card3").show();
+   
+ });
+ ////add button
+ 
 $('.mainBtn').click(function(){
   $(this).text(1);
 
   $(this).siblings('.minusBtn ,.plusBtn').css('display' ,'inline-block');
-})
+  
+ 
+});
 
+var counter = 1;
+$(".plusBtn").click(function(){
+  counter++;
 
+  $(".mainBtn ,value").text(counter);
+});
 
+$(".minusBtn").click(function(){
+  counter--;
+
+  $(".mainBtn ,value").text(counter);
+});
+$('a').click(function(e) {
+  //reset default anchor behavior
+  e.preventDefault();
+
+  //add noscroll class to body
+  $("body").addClass(".totalvaluenav"); 
+
+  //open overlay box
+  openOverlayBox(); 
+});
 

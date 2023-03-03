@@ -43,7 +43,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
+  <header id="header" class=" d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
         <div>
             <img class="logo" src="./assets/img/logo1.png" alt="" srcset="" width="75px">
@@ -93,25 +93,32 @@
 <!-- <div style="display: flex;position: sticky;top: 0;z-index: 100000;">
     <a href="#booknow1"> <img src="./assets/img/prcelist.png" class="booknow blink"  download></a>
  </div> -->
+ <div class="totalvaluenav">
+    <div class="container-fluied justify-content-evenly  d-flex align-items-center Order" >
+        <div class="hh5 fw-bold">
+         Original Price:₹ <span>0.0</span>
 
-    <section >
+        </div>
+        <div class="hh5 fw-bold">
+         Discount:₹ <span>0.0</span>
+
+        </div>
+        <div class="hh5 fw-bold">
+         Total Price:₹ <span>0.0</span>
+        </div>
+ </div>
+
+</div>
+    <section class="section1" >
+
+
+        <div class="marquee mt-2">
+            <p>Sri MaDhu CraKers - 50% Discount - 9159211336</p>
+        </div>
         <div class="justify-content-center  d-flex align-items-center text-danger">
-            <h3 class="fw-bold mt-4">ORDER LIST</h3>
+            <h3 class="fw-bold ">ORDER LIST</h3>
         </div>
-        <div class="container-fluied justify-content-evenly  d-flex align-items-center Order" >
-               <div class="hh5 fw-bold">
-                Original Price:₹ <span>0.0</span>
-
-               </div>
-               <div class="hh5 fw-bold">
-                Discount:₹ <span>0.0</span>
-
-               </div>
-               <div class="hh5 fw-bold">
-                Total Price:₹ <span>0.0</span>
-               </div>
-        </div>
-
+    
         <div class="container mt-4">
             <div class="d-flex  justify-content-evenly">
                 <h4 class="fw-bold  fss-4">
@@ -133,64 +140,140 @@
                     Total
                 </h4>
             </div>
-            <div class="d-flex violet justify-content-around align-items-center container-fact">
-                <h5 class=" hh4 ">Sparklers ( 80 % )</h5>
+            <div class="d-flex violet align-items-center container-fact">
+                <h5 class=" hh4 d-flex justify-content-center w-100">Sparklers</h5>
+                <div class="site-icon">
+                    <i class="bi bi-arrow-down openbtn " >  </i>
+                    <i class="bi bi-x hidebtn"></i>
+                </div>
+                   
+                  
             </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  text-danger fw-bold">
-                    7 cm Electric Sparklers
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 80
-                </div>
-               </div>
-
+            <div class="total-card">
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
                
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div >
-                    <img id="imageGallery" src="./assets/img/products/Sparklers 10.png" alt="" height="200px"  >
-                    
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  text-danger fw-bold">
+                        7 cm Electric Sparklers
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 80
+                    </div>
+                   </div>
+    
+                   
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div >
+                        <img id="imageGallery" src="./assets/img/products/Sparklers 10.png" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn" >
+                        <button class="minusBtn"  onclick="subst()">-</button>&nbsp;
+                        <button class="mainBtn" >ADD</button>&nbsp;
+                        <button class="plusBtn" onclick="add()">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
                 </div>
-                <div class="addbtn" >
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
+                    </div>
                 </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4 text-danger fw-bold ">
+                        15 cm Electric Sparklers
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 800.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 100
+                    </div>
+                   </div>
+    
+                    <div class = "purchase-info col-lg-3 col-md-6" >
+                        <div>
+                            <img id="imageGallery" src="./assets/img/products/Sparklers 15.png" alt="" height="200px"  >
+                            
+                        </div>
+                        <div class="addbtn">
+                            <button class="minusBtn">-</button>&nbsp;
+                            <button class="mainBtn" name="mainBtn">ADD</button>&nbsp;
+                            <button class="plusBtn">+</button>
+                        </div>
+    
+                        <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                        <!-- <input type = "number" min = "0" value = "0"> -->
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4 text-danger fw-bold ">
-                    15 cm Electric Sparklers
-                </div>
-                <div class="fss-5 ">
-                    ₹ 800.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 100
-                </div>
-               </div>
-
-                <div class = "purchase-info col-lg-3 col-md-6" >
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  text-danger fw-bold">
+                        30 cm Electric Sparklers
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 130
+                    </div>
+                   </div>
+    
+                   <div class = "purchase-info col-lg-3 col-md-6" >
                     <div>
-                        <img id="imageGallery" src="./assets/img/products/Sparklers 15.png" alt="" height="200px"  >
+                        <img id="imageGallery" src="./assets/img/products/Sparklers 30.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn" value="60">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+    
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4 text-danger fw-bold ">
+                        50 cm Electric Sparklers
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 1000.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 250
+                    </div>
+                   </div>
+    
+     
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/Sparklers 50.png" alt="" height="200px"  >
                         
                     </div>
                     <div class="addbtn">
@@ -198,477 +281,433 @@
                         <button class="mainBtn">ADD</button>&nbsp;
                         <button class="plusBtn">+</button>
                     </div>
-
                     <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
                     <!-- <input type = "number" min = "0" value = "0"> -->
                 </div>
+                    </div>
                 </div>
             </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  text-danger fw-bold">
-                    30 cm Electric Sparklers
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 130
-                </div>
-               </div>
 
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/Sparklers 30.jpg" alt="" height="200px"  >
-                    
+            <div class="d-flex violet align-items-center container-fact">
+                <h5 class=" hh4 d-flex justify-content-center w-100">Flowerpot</h5>
+                <div class="site-icon">
+                    <i class="bi bi-arrow-down openbtn1 " >  </i>
+                    <i class="bi bi-x hidebtn1"></i>
                 </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
+                   
+                  
             </div>
+            <div class="total-card1">
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                        Flowerpot small
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 80
+                    </div>
+                   </div>
+    
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/flowerpot small.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                        Flowerpot Big
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 100
+                    </div>
+                   </div>
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/flowerpot spl.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                        Flowerpot asoka
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 150
+                    </div>
+                   </div>
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/flowerpot asoka.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                       Flowerpot Deluxe
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 1000.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 250
+                    </div>
+                   </div>
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/flowerpot delx.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
                 </div>
             </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4 text-danger fw-bold ">
-                    50 cm Electric Sparklers
-                </div>
-                <div class="fss-5 ">
-                    ₹ 1000.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 250
-                </div>
-               </div>
-
  
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/Sparklers 50.png" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
+            <div class="d-flex violet align-items-center container-fact">
+                <h5 class=" hh4 d-flex justify-content-center w-100">GroundChakkar</h5>
+                <div class="site-icon">
+                    <i class="bi bi-arrow-down openbtn2 " >  </i>
+                    <i class="bi bi-x hidebtn2"></i>
+                </div> 
             </div>
+            <div class="total-card2">
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                        GroundChakkar Big
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 80
+                    </div>
+                   </div>
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/Gc big.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                        GroundChakkar Speacil
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 160
+                    </div>
+                   </div>
+    
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/gc spl.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                        GroundChakkar Deluxe
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 90
+                    </div>
+                   </div>
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/gc delux.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                       winner Deluxe
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 1000.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 250
+                    </div>
+                   </div>
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/winner delx.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
                 </div>
             </div>
-            <div class="d-flex violet justify-content-around align-items-center container-fact">
-                <h4 class=" hh4 ">Flowerpot ( 80 % )</h4>
+   
+            <div class="d-flex violet align-items-center container-fact">
+                <h5 class=" hh4 d-flex justify-content-center w-100">Sound Crackers</h5>
+                <div class="site-icon">
+                    <i class="bi bi-arrow-down openbtn3 " >  </i>
+                    <i class="bi bi-x hidebtn3"></i>
+                </div> 
             </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                    Flowerpot small
+            <div class="total-card3">
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                        Bullet Bomb
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 200.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 50
+                    </div>
+                   </div>
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/bullet bomb.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
                 </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
+                    </div>
                 </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                        Digital Bomb
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 150
+                    </div>
+                   </div>
+    
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/digital bomb.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
                 </div>
-                <div class="fss-5 text-success">
-                    ₹ 80
+                    </div>
                 </div>
-               </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                       Deluxe Bomb
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 400.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 200
+                    </div>
+                   </div>
+    
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/din domb.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+                <div class="cards " >
+                    <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
+               
+                   <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
+                    <div class="fss-5 mt-4  ">
+                       Hydro Bomb
+                    </div>
+                    <div class="fss-5 ">
+                        ₹ 1000.00
+                    </div>
+                    <div class="fss-5 ">
+                        <span class="strike actual_price">₹ 320</span>
+                    </div>
+                    <div class="fss-5 text-success">
+                        ₹ 250
+                    </div>
+                   </div>
+                   <div class = "purchase-info col-lg-3 col-md-6" >
+                    <div>
+                        <img id="imageGallery" src="./assets/img/products/deluxe bomb.jpg" alt="" height="200px"  >
+                        
+                    </div>
+                    <div class="addbtn">
+                        <button class="minusBtn">-</button>&nbsp;
+                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button class="plusBtn">+</button>
+                    </div>
+                    <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
+                    <!-- <input type = "number" min = "0" value = "0"> -->
+                </div>
+                    </div>
+                </div>
+            </div>
 
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/flowerpot small.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                    Flowerpot Big
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 100
-                </div>
-               </div>
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/flowerpot spl.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                    Flowerpot asoka
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 150
-                </div>
-               </div>
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/flowerpot asoka.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                   Flowerpot Deluxe
-                </div>
-                <div class="fss-5 ">
-                    ₹ 1000.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 250
-                </div>
-               </div>
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/flowerpot delx.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="d-flex violet justify-content-around align-items-center container-fact">
-                <h4 class=" hh4 ">GroundChakkar ( 80 % )</h4>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                    GroundChakkar Big
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 80
-                </div>
-               </div>
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/Gc big.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                    GroundChakkar Speacil
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 160
-                </div>
-               </div>
-
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/gc spl.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                    GroundChakkar Deluxe
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 90
-                </div>
-               </div>
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/gc delux.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                   winner Deluxe
-                </div>
-                <div class="fss-5 ">
-                    ₹ 1000.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 250
-                </div>
-               </div>
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/winner delx.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="d-flex violet justify-content-around align-items-center container-fact">
-                <h4 class=" hh4 ">Sound Crackers ( 80 % )</h4>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                    Bullet Bomb
-                </div>
-                <div class="fss-5 ">
-                    ₹ 200.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 50
-                </div>
-               </div>
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/bullet bomb.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                    Digital Bomb
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 150
-                </div>
-               </div>
-
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/digital bomb.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                   Deluxe Bomb
-                </div>
-                <div class="fss-5 ">
-                    ₹ 400.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 200
-                </div>
-               </div>
-
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/din domb.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
-            <div class="cards " >
-                <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
-           
-               <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
-                <div class="fss-5 mt-4  ">
-                   Hydro Bomb
-                </div>
-                <div class="fss-5 ">
-                    ₹ 1000.00
-                </div>
-                <div class="fss-5 ">
-                    <span class="strike actual_price">₹ 320</span>
-                </div>
-                <div class="fss-5 text-success">
-                    ₹ 250
-                </div>
-               </div>
-               <div class = "purchase-info col-lg-3 col-md-6" >
-                <div>
-                    <img id="imageGallery" src="./assets/img/products/deluxe bomb.jpg" alt="" height="200px"  >
-                    
-                </div>
-                <div class="addbtn">
-                    <button class="minusBtn">-</button>&nbsp;
-                    <button class="mainBtn">ADD</button>&nbsp;
-                    <button class="plusBtn">+</button>
-                </div>
-                <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
-                <!-- <input type = "number" min = "0" value = "0"> -->
-            </div>
-                </div>
-            </div>
 
          
             <div class="row g-4">
@@ -823,6 +862,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/jquery-3.6.3.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
