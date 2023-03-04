@@ -366,7 +366,7 @@ $(".minusBtn").click(function(){
   $(this).siblings('.mainBtn').text(count -1);
 });
 
-var target = $('.navbar')
+var target = $('header')
 target.after('<div class="affix" id="affix"></div>')
 
 var affix = $('.affix')
