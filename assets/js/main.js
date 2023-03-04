@@ -314,6 +314,7 @@
 
 $('.hidebtn').click(function () {
  $('.total-card').hide();
+
  });
  $(".openbtn").click(function(){
   $(".total-card").show();
@@ -352,26 +353,40 @@ $('.mainBtn').click(function(){
  
 });
 
-var counter = 1;
+var counter = 0;
 $(".plusBtn").click(function(){
-  counter++;
+ 
+  var count = Number($(this).siblings('.mainBtn').text());
+  $(this).siblings('.mainBtn').text(count +1);
 
-  $(".mainBtn ,value").text(counter);
 });
 
 $(".minusBtn").click(function(){
-  counter--;
-
-  $(".mainBtn ,value").text(counter);
+  var count = Number($(this).siblings('.mainBtn').text());
+  $(this).siblings('.mainBtn').text(count -1);
 });
-$('a').click(function(e) {
-  //reset default anchor behavior
-  e.preventDefault();
 
-  //add noscroll class to body
-  $("body").addClass(".totalvaluenav"); 
+var target = $('.navbar')
+target.after('<div class="affix" id="affix"></div>')
 
-  //open overlay box
-  openOverlayBox(); 
-});
+var affix = $('.affix')
+affix.append(target.clone(true))
+
+// Show affix on scroll.
+var element = document.getElementById('affix')
+if (element !== null) {
+  var position = target.position()
+  window.addEventListener('scroll', function () {
+    var height = $(window).scrollTop()
+    if (height > position.top) {
+      target.css('visibility', 'hidden')
+      affix.css('display', 'block')
+    } else {
+      affix.css('display', 'none')
+      target.css('visibility', 'visible')
+    }
+  })
+}
+
+
 

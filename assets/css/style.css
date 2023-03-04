@@ -2390,7 +2390,7 @@ section {
   .Order {
       position: fixed;
       width: 100%;
-      top: 100px;
+      top: 0px;
       background-color:#281a3bcf;
       font-size: 18px;
       height: 30px;
@@ -2620,12 +2620,37 @@ font-weight: 700;
   }
 }
 .section1 {
-  padding: 24px 0;
+  padding: 0px 0;
   overflow: hidden;
   position: relative;
 }
-body div .totalvaluenav{
+.affix {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  overflow-y: scroll;
+  z-index: 9999;
+  display: none;
+}
+
+
+
+
+.faq-section .mb-0 > a {
+  display: block;
+  position: relative;
+}
+
+.faq-section .mb-0 > a:after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+}
+
+.faq-section .mb-0 > a[aria-expanded="true"]:after {
+  content: "\f068";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
 }

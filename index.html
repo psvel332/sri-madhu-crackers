@@ -93,8 +93,8 @@
 <!-- <div style="display: flex;position: sticky;top: 0;z-index: 100000;">
     <a href="#booknow1"> <img src="./assets/img/prcelist.png" class="booknow blink"  download></a>
  </div> -->
- <div class="totalvaluenav">
-    <div class="container-fluied justify-content-evenly  d-flex align-items-center Order" >
+ <div class="affix" >
+    <div class="container-fluied justify-content-evenly  d-flex align-items-center Order" style="display: block;">
         <div class="hh5 fw-bold">
          Original Price:₹ <span>0.0</span>
 
@@ -113,7 +113,7 @@
 
 
         <div class="marquee mt-2">
-            <p>Sri MaDhu CraKers - 50% Discount - 9159211336</p>
+            <p>Sri MaDhu CraKers - 50% Discount - 9159211336-Door Delivery,Pickup Service provide by Our Custmers.</p>
         </div>
         <div class="justify-content-center  d-flex align-items-center text-danger">
             <h3 class="fw-bold ">ORDER LIST</h3>
@@ -140,17 +140,16 @@
                     Total
                 </h4>
             </div>
-            <div class="d-flex violet align-items-center container-fact">
-                <h5 class=" hh4 d-flex justify-content-center w-100">Sparklers</h5>
-                <div class="site-icon">
-                    <i class="bi bi-arrow-down openbtn " >  </i>
-                    <i class="bi bi-x hidebtn"></i>
+            <div class="d-flex violet align-items-center container-fact ">
+                <h5 class=" hh4 d-flex justify-content-center w-100 hidebtn ">Sparklers</h5>
+                <div class="site-icon openbtn">
+                    <i class="bi bi-arrow-down  " >  </i>
                 </div>
                    
                   
             </div>
             <div class="total-card">
-                <div class="cards " >
+                <div class="cards">
                     <div class="d-grid justify-content-around align-items-center row" style="grid-template-columns: 4fr 1fr;">
                
                    <div class="justify-content-around align-items-center container-product col-lg-9 col-md-6">
@@ -175,9 +174,9 @@
                         
                     </div>
                     <div class="addbtn" >
-                        <button class="minusBtn"  onclick="subst()">-</button>&nbsp;
-                        <button class="mainBtn" >ADD</button>&nbsp;
-                        <button class="plusBtn" onclick="add()">+</button>
+                        <button class="minusBtn qty" type="button" value="-" >-</button>&nbsp;
+                        <button class="mainBtn qty" value="0" >ADD</button>&nbsp;
+                        <button class="plusBtn qty" type="button" value="+">+</button>
                     </div>
                     <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
                     <!-- <input type = "number" min = "0" value = "0"> -->
@@ -208,9 +207,9 @@
                             
                         </div>
                         <div class="addbtn">
-                            <button class="minusBtn">-</button>&nbsp;
-                            <button class="mainBtn" name="mainBtn">ADD</button>&nbsp;
-                            <button class="plusBtn">+</button>
+                            <button class="qty minusBtn" >-</button>&nbsp;
+                            <button class="mainBtn qtyvalue" value="0">ADD</button>&nbsp;
+                            <button class="qty plusBtn" >+</button>
                         </div>
     
                         <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
@@ -243,7 +242,7 @@
                     </div>
                     <div class="addbtn">
                         <button class="minusBtn">-</button>&nbsp;
-                        <button class="mainBtn" value="60">ADD</button>&nbsp;
+                        <button class="mainBtn" value="1">ADD</button>&nbsp;
                         <button class="plusBtn">+</button>
                     </div>
     
@@ -278,7 +277,7 @@
                     </div>
                     <div class="addbtn">
                         <button class="minusBtn">-</button>&nbsp;
-                        <button class="mainBtn">ADD</button>&nbsp;
+                        <button type="button" class="mainBtn" value="2">ADD</button>&nbsp;
                         <button class="plusBtn">+</button>
                     </div>
                     <!-- <a href="#about" class="get-started-btn scrollto" style="margin-left: 0;" >Add</a> -->
@@ -288,11 +287,10 @@
                 </div>
             </div>
 
-            <div class="d-flex violet align-items-center container-fact">
-                <h5 class=" hh4 d-flex justify-content-center w-100">Flowerpot</h5>
-                <div class="site-icon">
-                    <i class="bi bi-arrow-down openbtn1 " >  </i>
-                    <i class="bi bi-x hidebtn1"></i>
+            <div class="d-flex violet align-items-center container-fact ">
+                <h5 class=" hh4 d-flex justify-content-center w-100 hidebtn1 ">Flowerpot</h5>
+                <div class="site-icon openbtn1">
+                    <i class="bi bi-arrow-down  " >  </i>
                 </div>
                    
                   
@@ -429,12 +427,13 @@
                 </div>
             </div>
  
-            <div class="d-flex violet align-items-center container-fact">
-                <h5 class=" hh4 d-flex justify-content-center w-100">GroundChakkar</h5>
-                <div class="site-icon">
-                    <i class="bi bi-arrow-down openbtn2 " >  </i>
-                    <i class="bi bi-x hidebtn2"></i>
-                </div> 
+            <div class="d-flex violet align-items-center container-fact ">
+                <h5 class=" hh4 d-flex justify-content-center w-100 hidebtn2 ">GroundChakkar</h5>
+                <div class="site-icon openbtn2">
+                    <i class="bi bi-arrow-down  " >  </i>
+                </div>
+                   
+                  
             </div>
             <div class="total-card2">
                 <div class="cards " >
@@ -568,12 +567,12 @@
                 </div>
             </div>
    
-            <div class="d-flex violet align-items-center container-fact">
-                <h5 class=" hh4 d-flex justify-content-center w-100">Sound Crackers</h5>
-                <div class="site-icon">
-                    <i class="bi bi-arrow-down openbtn3 " >  </i>
-                    <i class="bi bi-x hidebtn3"></i>
-                </div> 
+
+            <div class="d-flex violet align-items-center container-fact ">
+                <h5 class=" hh4 d-flex justify-content-center w-100 hidebtn3 ">Sound Crackers</h5>
+                <div class="site-icon openbtn3">
+                    <i class="bi bi-arrow-down  " >  </i>
+                </div>
             </div>
             <div class="total-card3">
                 <div class="cards " >
@@ -713,10 +712,10 @@
             <div class="row g-4">
                 <div class="col-xl-6" >
                     <div id="contact" class="container">
-                    <div class="row" style="margin-top: 60px;">
+                    <div class="row" style="margin-top: 0px;">
                     </div>
 
-                    <div class="row" style="margin-top: 60px;">
+                    <div class="row" style="margin-top: 0px;">
                         <div class="col-md-4 py-3 py-md-0">
                             <input type="text" class="form-control form-control" placeholder="Name" required>
                         </div>
@@ -740,7 +739,7 @@
                 </div>
 
 
-                <div class="col-xl-6" style="margin-top:50px;">
+                <div class="col-xl-6" style="margin-top:10px;">
                     <div class="col-xl-8 mt-5">
                         <div class="w-100 form-group">
                             <div class="row">
@@ -787,7 +786,7 @@
                         </div>
 
 
-                        <div class="w-100 text-center">
+                        <div class="w-100 text-center mb-3">
                             <button  type="button" class="btn btn-danger">Submit</button>
                         </div>
                     </div>
