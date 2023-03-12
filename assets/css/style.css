@@ -2395,6 +2395,16 @@ section {
       z-index: 1;
       color: #f3f36d;
   }
+  .Order1 {
+    /* position: fixed; */
+    width: 100%;
+    /* top: 0px; */
+    background-color:#281a3bcf;
+    font-size: 18px;
+    height: 30px;
+    z-index: 1;
+    color: #f3f36d;
+}
   .strike {
       text-decoration-color: #e03a3c !important;
       text-decoration-thickness: 2px !important;
@@ -2829,4 +2839,19 @@ dt > button {
 #pab_6{
   display: flex;
   justify-content: center;
+}
+@media (max-width:400px){
+  .booknow1{
+    width: 15%;
+    position: absolute;
+    top: 553px;
+    left: 6px;
+  }
+}
+@media (min-width:1000px){
+  .booknow1{
+    position: absolute;top: 827px;right: 0;
+    width: 4%;
+ 
+  }
 }
